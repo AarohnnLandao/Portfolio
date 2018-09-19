@@ -1,0 +1,293 @@
+/* CSS by: Joshua Schmidt*/
+
+/*Colors 
+		Main #666666
+		Background #262626
+		Accent #5c268e
+		Hilight #8e4acf
+*/
+
+
+/*Style specifies page background color*/
+body {
+	background-color: #262626;
+	margin: 0;
+}
+
+/*Specifies the sizeing and spaceing of the banner image*/
+.mobilebanner{
+	max-width: 100%;
+	margin-top: .7em;
+	
+}
+/* Specifies the container properties */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+/*Specifies header text properties (if applicable)*/
+header {
+	margin-top: .2em;
+	color: white;
+	text-align: center;
+	font-family: Verdana, Arial, sand-serif;
+	font-weight: bold;	
+}
+
+header h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*Specifies base set up of the nav properties*/
+nav {
+	padding: 0;
+	max-width: 100%;
+	text-align: center;
+	font-family: Verdana, Arial, sand-serif;
+	font-size: 1em;	
+	font-weight: bold;
+	
+}
+
+/*Specifies padding for the nav list element*/
+nav ul {
+	padding-left: 0;
+	margin-top: 0;
+}
+	
+/*Specifies list properties for the individual list items*/
+nav li {
+	max-width: 100%;
+	background-color: #5c268e;
+	border-radius: .7em;
+	padding: .2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	list-style: none;
+}
+
+/*Specifies link text colors*/
+nav li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+
+/*Style specifies listed language header centers*/
+main h3{
+	text-align: center;	
+}
+	
+/*Specifies styles for the main element*/
+main {
+		display: block;
+		background-color: #666666;
+		color: white;
+		font-family: Verdana, Arial, sand-serif;
+		font-size: 1em;
+		margin-top: 1em;	
+		margin-left: 15%;
+		margin-right: 15%;
+		padding: 1em;
+		border-radius: .2em;		
+}
+
+/*Style specifies link color*/
+main a:link{
+	color: white;
+}
+
+main a:hover{
+	color: #5c268e
+}
+
+	
+/*Style specifies no bullets on the list for mobile*/
+main ul {
+	list-style: none;
+}
+
+/*Specifies footer element properties*/
+footer {
+	text-align: center;
+	font-size: .7em;
+	color: white;
+}
+
+/*Specifies social media image elements in the footer*/
+footer img {
+	padding-left: 1em;
+	padding-right: 1em;
+	opacity: .5;
+	max-width: 5em;
+}
+
+
+/*Hides the desktop version of the banner on smaller platforms*/
+#desktopbanner {
+	display: none;
+}
+
+.desktop {
+	display: none;
+}
+
+form label{
+	display: block;
+	padding: 1em;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.active {
+	background-color: #8e4acf;
+}
+
+
+/**********************************************************************Tablet Query**********************************************/
+
+@media only screen and (min-width: 620px){
+
+nav {
+	display: inline;
+	max-width: 100%;
+	padding: 0;
+	margin: auto;	
+	
+}
+
+nav ul{
+	margin: 0;	
+}
+
+nav li {
+	display: inline;
+	float: left;
+	margin-left: .5%;
+	margin-right: .5%;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;	
+	width: 19%;
+	white-space: nowrap;
+	border-radius: 0;
+}
+
+/*Supports hover on non maximized browesers/tablet view*/
+nav li:hover {
+	opacity: .5;
+}	
+
+/*Specifies the main element top margin:*/
+main {
+	padding-top: .8em;
+	margin-top: 5em;
+}
+
+
+/*style centers table text*/
+table {
+	border: 0.1em solid #000000;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center;
+}
+
+/*Style specifies caption for table style*/
+caption {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/*Style specifies border and padding for the th and td elements*/
+th, td {
+	border: 0.1em solid #000000;
+	padding: 1em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+/*Style sets transparancy for social media icons in the footer*/
+footer img:hover {
+	opacity: .8;
+}
+
+.desktop {
+	display: inline;	
+}
+
+.mobile {
+	display: none;
+}
+
+}/*End Tablet*/
+
+
+/***********************************************************************Desktop Query*********************************************/
+
+@media only screen and (min-width: 1919px) {
+
+/*Specifies the hover reaction on Nav items*/	
+	
+/*hides the mobile/ "TabletDesktop" banner for full desktop view*/
+header img{
+	display: none;
+}
+/*displays the full desktop banner*/
+#desktopbanner {
+	display: inline;
+	
+}
+#desktopbanner img {
+	max-height: 30%;
+	max-width: 90%;	
+	float: right;
+}
+
+/*adjusts nav for the full desktop side view style*/
+nav{
+	max-height: 30%;
+	display: inline-block;
+	width: 9%;
+}
+
+/*specifies display type for the nav bar*/
+nav li a{
+	display: block;
+}
+
+/*specifies padding and coloring for the nav bar*/
+nav li{	
+	clear: left;		
+	background-color: #5c268e;
+	border-radius: 0;
+	padding-right: 70%;
+	padding-left: 20%;
+	padding-top: 16%;/*27.5px;*/ 
+	padding-bottom: 16%; /*27.5px;*/
+	margin-top: .5%;
+	margin-bottom: .5%;
+	margin-left: 0;
+	margin-right: 0;
+	list-style: none;
+}
+
+/*specifies margin for main content*/
+main {
+	margin-top: 1em;	
+}
+
+
+} /*end desktop*/
+
+	
+	
+	
