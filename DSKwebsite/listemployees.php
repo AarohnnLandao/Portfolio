@@ -88,7 +88,9 @@ $moderators = ModeratorDB::getModerators();
                                 <li><a href="index.html#section2">About</a></li>                                
 				<li><a href="news.php">News</a></li>
 				<li><a href="contact.php">Contact</a></li>
-				<li><a href="faq.html">FAQ</a></li>		
+				<li><a href="faq.html">FAQ</a></li>
+                                <li><a href="admintab.php">Admin</a></li>
+                                <li class="active"><a href="listemployees.php">Mods</a></li>
 		</nav>
 	</div>
 	<!---			---			--- Start Banner ---			---			--->
